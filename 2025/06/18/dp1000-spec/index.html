@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <title>UR-DP1000 Chip Spec</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+  <body>
+    <main class="container">
+      <header class="header">
+    <div class="blog-title">
+        <h1><a href="/">UltraRISC SSW</a></h1>
+        <p class="description"><p>System Engineering @ UltraRISC </p>
+</p>
+    </div>
+    <nav class="navbar">
+        <ul class="menu">
+            
+        </ul>
+    </nav>
+</header>
+
+      <article class="post">
+          <div class="post-title">
+            <h2 class="title">UR-DP1000 Chip Spec</h2>
+          </div>          
+          <div class="post-meta">
+            <span class="post-time">2025-06-18</span>
+            
+            
+            <hr>
+          </div>
+          <div class="post-content"><p>UltraRISC Technology announced UR-DP1000, its first desktop-grade RISC-V CPU.</p>
+<p>UR-DP1000 high performance desktop-grade multi-core RISC-V CPU features 8 self-developed UR-CP100 cores, with 24 lanes of PCIe 4.0, dual DDR 4.0 and series of low-speed peripherals. UR-DP1000 outperforms most off-the-shelf RISC-V CPUs and targets desktop and high-end edge computing scenarios.</p>
+<h2 id="Main-hardware-features-of-UR-DP1000"><a href="#Main-hardware-features-of-UR-DP1000" class="headerlink" title="Main hardware features of UR-DP1000"></a>Main hardware features of UR-DP1000</h2><ul>
+<li>High performance RISC-V core UR-CP100<ul>
+<li>64bit four-issue superscalar micro-architecture</li>
+<li>Support RV64GCBHX, <code>X</code> being high performance arithmetic and load&#x2F;store instructions</li>
+<li>Support hardware virtualization RVH 1.0 extension</li>
+<li>Main frequency 2.0 to 2.3 GHz (12nm process)</li>
+<li>Single core SPECCPU2006 Integer performance: 10.4&#x2F;GHz</li>
+<li>Single core SPECCPU2006 Floating point performance: 12.0&#x2F;GHz</li>
+<li>Each core has 64KB L1I + 64KB L1D cache and 512KB L2 Cache</li>
+<li>Each core has built-in Performance Monitoring Unit (PMU)</li>
+<li>Support RV Debug specification</li>
+</ul>
+</li>
+<li>Two CPU core clusters<ul>
+<li>Each cluster has 4 UR-CP100 cores</li>
+<li>Each cluster shares 4MB L3 cache</li>
+<li>Two clusters share 16MB LLC cache</li>
+</ul>
+</li>
+<li>CLINT and PLIC support</li>
+<li>Dual channel DDR4, with ECC support, maximum memory capacity 128GB</li>
+<li>I&#x2F;O<ul>
+<li>1 GMAC (RGMII)</li>
+<li>1 QSPI</li>
+<li>2 SPI</li>
+<li>1 eSPI&#x2F;LPC</li>
+<li>4 UART</li>
+<li>4 I2C</li>
+<li>40 GPIO</li>
+<li>4 PWM</li>
+</ul>
+</li>
+<li>FCBGA-1155 package, 35x35mm2</li>
+<li>TDP: 30w</li>
+</ul>
+<h2 id="Software-Ecosystem-of-UR-DP1000"><a href="#Software-Ecosystem-of-UR-DP1000" class="headerlink" title="Software Ecosystem of UR-DP1000"></a>Software Ecosystem of UR-DP1000</h2><ul>
+<li><p>Support OpenSBI + U-Boot &#x2F; EDKII (UEFI); UEFI supports ACPI, CPPC, SMBIOS</p>
+</li>
+<li><p>Support Linux kernel 5.4 to 6.6 (all LTS versions)</p>
+</li>
+<li><p>Support Linux KVM (qemu-kvm), XVisor, Bao Hypervisor</p>
+</li>
+<li><p>Support Debian, Ubuntu 22&#x2F;24.04, Fedora, Centos, OpenAtom openKylin 2.0, Deepin, OpenEuler, OpenHarmony, RT-Thread, FreeRTOS, Zephyr</p>
+</li>
+<li><p>Support PCIe expansion: ethernet, graphics, toUSB&#x2F;toSATA adaptor, SSD</p>
+</li>
+<li><p>Support Linux suspend2ram and suspend2disk (hibernation)</p>
+</li>
+<li><p>Support OpenOCD debugging</p>
+</li>
+<li><p>Support various libraries: compression, BLAS, FFT, crypto, networking</p>
+</li>
+<li><p>Support DPDK&#x2F;SPDK</p>
+</li>
+<li><p>Support Java, Javascript, Golang, Lua, Python, Php, Rust interpreter and JIT</p>
+</li>
+<li><p>Support Wine and box64</p>
+</li>
+<li><p>Support Linux perf profiler</p>
+</li>
+<li><p>Support Llama, Yolo v5</p>
+</li>
+<li><p>Support Docker and container ecosystem</p>
+</li>
+<li><p>Support desktop environments including Xfce, gnome, KDE </p>
+</li>
+<li><p>Support UltraRISC IDE (VSCodium&#x2F;VSCode based)</p>
+</li>
+</ul>
+</div
+
+        </article>
+        
+        <!-- <p class="footer">Made with ♥︎ by UltraRISC SSW</p> -->
+      </main>
+  </body>
+</html>
